@@ -31,12 +31,12 @@ export default function Select_dialog() {
     {
       id: 0,
       name: '한국 배우',
-      img: 'https://i.namu.wiki/i/bHVL6uyW192l9cBrQvD7728wab5uBKf_Q9ggncAPyPt951XkowtdSEQmg7IwG5vDGk25s42zyj1uy2_e9XbLG4W-wrXSriXzE4EBVJ4OgOUqjsEUqScO9907NGOArjaw3WW72ovx63gNWt1uTfjlfQ.webp',
+      img: 'https://raw.githubusercontent.com/mediumryan/ryan_quiz_image_dir/refs/heads/master/src/images/actor/이병헌.webp',
     },
     {
       id: 1,
       name: '나라별 국기',
-      img: 'https://i.namu.wiki/i/yeL-OtvmaEAmUmsbFg-yhDSxNIrqPCy_ymhSqvjeZAnBgE8yERdEYo9wmxDleJYOv3Q88tH37TpCgngEfbFbBtKBdlKWwd6GELXSrBiAcBA5-o138qyTICSIeEUW23xjkk1K8QHfk3pz4NxOuDWZ3A.svg',
+      img: 'https://raw.githubusercontent.com/mediumryan/ryan_quiz_image_dir/refs/heads/master/src/images/nation/대한민국.svg',
     },
   ];
 

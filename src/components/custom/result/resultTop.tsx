@@ -40,7 +40,7 @@ export default function ResultTop({ correctCnt, totalCnt }: TResultTop) {
 
   return (
     <div className="flex flex-col items-center gap-8">
-      <h1 className="text-4xl font-extrabold">{title}</h1>
+      <h1 className="text-3xl md:text-4xl font-extrabold">{title}</h1>
       <p className="italic text-lg font-bold">
         {correctCnt} / {totalCnt}
       </p>

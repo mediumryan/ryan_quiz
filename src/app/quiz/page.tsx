@@ -79,10 +79,12 @@ export default function QuizPage() {
 
   return (
     <div className="relative text-white flex flex-col items-center justify-evenly min-h-screen py-2">
-      <h1 className="text-[1.5rem]">{quiz_title[selectedCategory]}</h1>
+      <h1 className="text-[1.25rem] md:text-[1.5rem] py-8 md:py-0">
+        {quiz_title[selectedCategory]}
+      </h1>
       <div
         className={`relative 
-          w-[400px] h-[400px] rounded-lg overflow-hidden cursor-pointer 
+          w-[200px] md:w-[400px] h-[200px] md:h-[400px] rounded-lg overflow-hidden cursor-pointer 
       border-4 ${
         isCorrect === 0
           ? 'border-gray-500'
@@ -127,8 +129,8 @@ export default function QuizPage() {
         다음문제
       </Button>
       <div
-        className="absolute top-24 right-24 p-4 bg-opacity-50
-        text-[1.25rem] bg-slate-700 rounded-lg flex flex-col items-center gap-2
+        className="absolute top-32 md:top-24 right-0 md:right-24 p-2 md:p-4 bg-opacity-50
+        md:text-[1.25rem] bg-slate-700 rounded-lg flex flex-row md:flex-col items-center gap-2 
       "
       >
         <h4>Score</h4>

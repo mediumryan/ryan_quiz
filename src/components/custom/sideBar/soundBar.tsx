@@ -22,6 +22,8 @@ export default function SoundBar() {
     4 : unmuted
   */
 
+  const btnStyle = 'w-4 h-4 md:w-6 md:h-6 hover:scale-110 duration-150';
+
   const handlePlay = () => {
     if (audioRef.current) {
       audioRef.current.play();
@@ -73,37 +75,27 @@ export default function SoundBar() {
       <div className="flex gap-2">
         <button id="play" onClick={handlePlay}>
           <PlayCircle
-            className={`${
-              audioState === 0 && 'text-red-500'
-            } hover:scale-110 duration-150`}
+            className={`${audioState === 0 && 'text-red-500'} ${btnStyle}`}
           />
         </button>
         <button onClick={handlePause}>
           <PauseCircle
-            className={`${
-              audioState === 1 && 'text-red-500'
-            } hover:scale-110 duration-150`}
+            className={`${audioState === 1 && 'text-red-500'} ${btnStyle}`}
           />
         </button>
         <button onClick={handleStop}>
           <StopCircle
-            className={`${
-              audioState === 2 && 'text-red-500'
-            } hover:scale-110 duration-150`}
+            className={`${audioState === 2 && 'text-red-500'} ${btnStyle}`}
           />
         </button>
         <button onClick={handleMute}>
           {audioState === 4 || audioState === 0 ? (
             <VolumeX
-              className={`${
-                audioState === 4 && 'text-red-500'
-              } hover:scale-110 duration-150`}
+              className={`${audioState === 4 && 'text-red-500'} ${btnStyle}`}
             />
           ) : (
             <Volume2
-              className={`${
-                audioState === 3 && 'text-red-500'
-              } hover:scale-110 duration-150`}
+              className={`${audioState === 3 && 'text-red-500'} ${btnStyle}`}
             />
           )}
         </button>
